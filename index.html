@@ -1,34 +1,136 @@
 <!doctype html>
 <html lang="uk">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css">
     <title>Студія</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <header class="header">
-      <div class="top-line">
+    <div class="wrapper">
+      <header class="header">
         <div class="logo">
-          <a href="#"><span>WEB</span><span>STUDIO</span></a>
+          <a href="#"><span class="logo-prefix">WEB</span><span class="logo-text">STUDIO</span></a>
         </div>
         <nav class="menu-nav">
-          <span>Studio</span>
-          <span>Portfolio</span>
-          <span>Contacts</span>
+          <a href="#">Studio</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contacts</a>
         </nav>
         <div class="contacts">
-          <a class="contacts-email" href="mailto:#">info@devstudio.com</a>
-          <a class="contacts-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a href="mailto:#">info@devstudio.com</a>
+          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
         </div>
-      <div>
-    </header>
-    <main>
-      <div class="main-title">
-        <span>Effective Solutions for Your Business</span>
-        <input type="button" value="Oredr Service" width="169" height="56"/>
-      </div>
-    </main>
-    <footer>
-      Footer
-    </foter>
+      </header>
+      <main class="main">
+        <!-- Promo --------------------------------------------------------->
+        <div class="main-promo">
+          <div class="main-promo-title">Effective Solutions for Your Business</div>
+          <button>Order Service</button>
+        </div>
+        <!-- Section "Features" -------------------------------------------->
+        <section class="main-features">
+          <div>
+            <h2>Strategy</h2>
+            <p>
+              Our goal is to identify the business
+              problem to walk away with the perfect
+              and creative solution.
+            </p>
+          </div>
+          <div>
+            <h2>Punctuality</h2>
+            <p>
+              Bring the key message to the brand's
+              audience for the best price within the
+              shortest possible time.
+            </p>
+          </div>
+          <div>
+            <h2>Diligence</h2>
+            <p>
+              Research and confirm brands that present
+              the strongest digital growth opportunities
+              and minimize risk.
+            </p>
+          </div>
+          <div>
+            <h2>Technologies</h2>
+            <p>
+              Design practice focused on digital
+              experiences. We bring forth a deep passion
+              for problem-solving.
+            </p>
+          </div>
+        </section>
+        <!-- Section "What are we doing" ----------------------------------->
+        <section class="main-doing">
+          <h1 class="main-header">What are we doing</h1>
+          <div>
+            <img src="images/turned-on-monitor.jpg" alt="Monitror with open diagram window"/>                        
+            <img src="images/smartphon-with-screenshot-sequences.jpg" alt="Smartphon with screenshot sequences"/>                        
+            <img src="images/smartphon-in-arm.jpg" alt="Smartphon in arm"/>                        
+          </div>
+        </section>
+        <!-- Section "Our Team" -------------------------------------------->
+        <section class="main-team">
+          <h1 class="main-header">Our Team</h1>
+          <div>
+            <figure class="main-team-employee">
+              <img src="images/crop-man-with-laptop-presenting-something.jpg" alt="Product Designer"/>
+              <figcaption class="main-team-employee-card">
+                <h3>Mark Guerrero</h3>
+                <p>Product Designer</p>
+              </figcaption>
+            </figure>
+            <figure class="main-team-employee">
+              <img src="images/crop-looking-aside-man.jpg" alt="Frontend Developer"/>
+              <figcaption class="main-team-employee-card">
+                <h3>Tom Ford</h3>
+                <p>Frontend Developer</p>
+              </figcaption>
+            </figure>
+            <figure class="main-team-employee">
+              <img
+                src="images/crop-young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg"
+                alt="Marketing"
+              />
+              <figcaption class="main-team-employee-card">
+                <h3>Camila Garcia</h3>
+                <p>Marketing</p>
+              </figcaption>
+            </figure>
+            <figure class="main-team-employee">
+              <img src="images/crop-confident-handsome-guy-posing-against-white-wall.jpg" alt="UI Designer"/>
+              <figcaption class="main-team-employee-card">
+                <h3>Daniel Wilson</h3>
+                <p>UI Designer</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div>
+          <div class="logo">
+            <span class="logo-prefix">WEB</span><span style="color: #F4F4FD">STUDIO</span>
+          </div>
+          <div class="footer-text">
+            Increase the flow of customers and sales for
+            your business with digital marketing & growth
+            solutions.
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
