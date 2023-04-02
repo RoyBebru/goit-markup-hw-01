@@ -1,11 +1,5 @@
-:root {
-    --content-width: 1440px;
-}
-
 body {
     background-color: gray;
-    /* Mostly used font family*/
-    font-family: 'Roboto';
 }
 
 /*{{{ Header ***/
@@ -18,7 +12,7 @@ body {
     justify-content: left;
     background-color: #FFFFFF;
 
-    width: var(--content-width);
+    width: 1440px;
     margin: 50px auto 0 auto;
 
     height: 72px;
@@ -55,6 +49,10 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    width: 264px;
+    margin-left: 76px;
+
+    font-family: 'Roboto';
     font-style: medium;
     font-size: 16px;
     line-height: 24px;
@@ -63,27 +61,7 @@ body {
     /* border: 2px dotted red; */
 }
 
-/* Show <a> for Logo as usual text */
 .menu-nav > a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.menu-nav > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 76px;
-}
-
-.menu-nav > ul > li {
-    margin-right: 40px;
-    list-style-type: none;
-}
-
-.menu-nav > ul > li > a {
     color: inherit;
     text-decoration: none;
 }
@@ -94,8 +72,10 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin-left: 192px;
+    width: 334px;
+    margin-left: 332px;
 
+    font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
@@ -104,20 +84,7 @@ body {
     /* border: 2px dotted red; */
 }
 
-.contacts > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contacts > ul > li {
-    margin-right: 40px;
-    list-style-type: none;
-}
-
-.contacts ul > li > a {
+.contacts > a {
     color: inherit;
     text-decoration: none;
 }
@@ -131,9 +98,10 @@ body {
     align-items: center;
     background-color: #FFFFFF;
 
-    width: var(--content-width);
+    width: 1440px;
     margin: 0 auto 0 auto;
 
+    font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
@@ -149,21 +117,21 @@ body {
     background-color: #2E2F42;
 }
 
-.main-promo > h1 {
+.main-promo-title {
+    font-family: 'Roboto';
     font-style: bold;
     font-size: 56px;
     line-height: 60px;
     text-align: center;
     width: 496px;
     color: #FFFFFF;
-    margin: 0;
-    padding: 0;
 
     /* border: 2px solid yellow; */
 }
 
 .main-promo > button {
     margin-top: 48px;
+    font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
@@ -176,56 +144,36 @@ body {
 
 .main-features {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 
     width: 1128px;
     margin: 56px 120px;
+    font-family: 'Roboto';
     line-height: 24px;
 
     /* border: 2px solid greenyellow; */
 }
 
-/* --- Features ======================================================== */
-
-.main-features h2 {
-    font-style: bold;
-    font-size: 36px;
-    line-height: 40px;
-    color: #2E2F42;
-    display: none;
-}
-
-.main-features > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* width: 1128px; */
+.main-features > div {
+    width: 264px;
     /* border: 2px solid greenyellow; */
 }
 
-.main-features > ul > li {
-    list-style-type: none;
-    width: 264px;
-    margin-right: 24px;
-}
-
-.main-features > ul > li > h3 {
+.main-features > div > h2 {
     margin: 0;
     font-style: bold;
     font-size: 20px;
     color: #2E2F42;
 }
 
-.main-features > ul > li > p {
+.main-features > div > p {
     margin: 8px 0 0 0;
     font-style: normal;
     font-size: 16px;
     color: #434455;
 }
-
-/* --- Doing =========================================================== */
 
 .main-doing {
     display: flex;
@@ -235,11 +183,12 @@ body {
 
     width: 1128px;
     margin: 56px 0 120px 0;
+    font-family: 'Roboto';
 
     /* border: 2px solid greenyellow; */
 }
 
-.main-doing > h2 {
+.main-header {
     margin: 0 auto 0 auto;
     font-style: bold;
     font-size: 36px;
@@ -247,83 +196,89 @@ body {
     color: #2E2F42;
 }
 
-.main-doing > ul {
+.main-doing > div {
     margin: 72px 0 0 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     width: 100%;
 }
 
-.main-doing > ul > li {
-    list-style-type: none;
-    /* width: 264px; */
-    margin-right: 24px;
-}
-
-.main-doing > ul > li > img {
+.main-doing > div > img {
     width: 360px;
     height: 300px;
 }
 
-/* --- Team ============================================================ */
-
 .main-team {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     background-color: #F4F4FD;
     width: 100%;
     margin: 0;
     padding: 120px 0 0 0;
+    font-family: 'Roboto';
 
     /* border: 2px solid greenyellow; */
 }
 
-.main-team > h2 {
-    margin: 0 auto 0 auto;
-    font-style: bold;
-    font-size: 36px;
-    line-height: 40px;
-    color: #2E2F42;
-}
-
-.main-team > ul {
+.main-team > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* align-items: center; */
     width: 100%;
     margin: 72px 0 120px 0;
     padding: 0;
+    font-family: 'Roboto';
 
     /* border: 2px solid yellow; */
 }
 
-.main-team > ul > li {
-    list-style-type: none;
-    margin-right: 24px;
-
+.main-team-employee {
+    margin: 0 24px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 264px;
     background-color: #FFFFFF;
+
+    /* border: 2px solid blue; */
 }
 
-.main-team > ul > li > img {
+.main-team-employee > img {
     width: inherit;
+    height: 260px;
+    /* object-fit: cover;
+    object-position: center top; */
 }
 
-.main-team > ul > li > h3 {
-    margin: 32px 0 0 0;
+.main-team-employee-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 16px 32px 16px 32px;
+    padding: 0;
+    font-family: 'Roboto';
+    line-height: 24px;
+
+    /* border: 2px solid greenyellow; */
+}
+
+.main-team-employee-card > h3 {
+    margin: 0;
     font-style: bold;
     font-size: 20px;
     color: #2E2F42;
 }
 
-.main-team > ul > li > p {
-    margin: 8px 0 32px 0;
+.main-team-employee-card > p {
+    margin: 8px 0 0 0;
     font-style: normal;
     font-size: 16px;
     color: #434455;
@@ -334,16 +289,28 @@ body {
 .footer {
     display: flex;
     flex-direction: column;
+    margin: 0;
     background-color: #2E2F42;
-    width: var(--content-width);
+    width: 1440px;
     margin: 0 auto 50px auto;
-    padding: 100px 0 100px 156px;
 }
 
-.footer > p {
-    margin: 16px 0 0 0;
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: start;
+    margin: 100px auto 100px 156px;
     width: 264px;
-    color: #E7E9FC;
-    line-height: 128%;    
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E7E9FC;    
+}
+
+.footer-text {
+    margin: 16px 0 0 0;
 }
 /*}}} End Footer ***/
