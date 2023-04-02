@@ -340,6 +340,11 @@ body {
     padding: 100px 0 100px 156px;
 }
 
+.footer > a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .footer > p {
     margin: 16px 0 0 0;
     width: 264px;
